@@ -1,0 +1,34 @@
+@use "variables";
+@use "hero";
+@use "event";
+@use "components/button";
+@use "components/infos-bar";
+@use "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Helvetica, sans-serif;
+  color: variables.$colorText;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 680px) {
+    max-width: 80%;
+  }
+  @media (max-width: 1024px) {
+    max-width: 90%;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 22px;
+    color: variables.$colorAzulClaro;
+  }
+}

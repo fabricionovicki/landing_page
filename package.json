@@ -1,0 +1,17 @@
+{
+  "name": "parcel-vanilla-starter",
+  "private": true,
+  "version": "0.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "dev:watch": "npm run delete-folders && npm run dev",
+    "delete-folders": "rimraf ./dist",
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "parcel": "^2.14.0",
+    "rimraf": "^6.0.1"
+  }
+}
